@@ -1,0 +1,398 @@
+{
+  "alb_security_group_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-0b31317938a2d2bf3"
+  },
+  "app_security_group_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-0006f9504e011ba46"
+  },
+  "availability_zones": {
+    "sensitive": false,
+    "type": [
+      "list",
+      "string"
+    ],
+    "value": [
+      "us-east-1a",
+      "us-east-1b",
+      "us-east-1c",
+      "us-east-1d",
+      "us-east-1e",
+      "us-east-1f"
+    ]
+  },
+  "aws_account_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "539247484955"
+  },
+  "bastion_security_group_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-007c7a4627c5df3b8"
+  },
+  "data_route_table_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "rtb-094c284d04f035d60"
+  },
+  "data_subnet_cidrs": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "10.0.100.0/24",
+      "10.0.200.0/24"
+    ]
+  },
+  "data_subnet_ids": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "subnet-0ca9b1d1ea593a9dc",
+      "subnet-05b8cd652ebc74ad5"
+    ]
+  },
+  "database_security_group_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-0f803d713d5579da1"
+  },
+  "flow_logs_cloudwatch_log_group": {
+    "sensitive": false,
+    "type": "string",
+    "value": "/aws/vpc/secure-vpc-staging"
+  },
+  "flow_logs_s3_bucket": {
+    "sensitive": false,
+    "type": "string",
+    "value": "secure-vpc-flow-logs-20260207093344194900000003"
+  },
+  "infrastructure_summary": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "availability_zones_count": "number",
+        "data_subnets_count": "number",
+        "environment": "string",
+        "flow_logs_enabled": "bool",
+        "nat_gateways_count": "number",
+        "private_subnets_count": "number",
+        "public_subnets_count": "number",
+        "vpc_cidr": "string",
+        "vpc_endpoints_enabled": "bool",
+        "vpc_id": "string"
+      }
+    ],
+    "value": {
+      "availability_zones_count": 6,
+      "data_subnets_count": 2,
+      "environment": "staging",
+      "flow_logs_enabled": true,
+      "nat_gateways_count": 2,
+      "private_subnets_count": 2,
+      "public_subnets_count": 2,
+      "vpc_cidr": "10.0.0.0/16",
+      "vpc_endpoints_enabled": true,
+      "vpc_id": "vpc-0d74d5ec7294c0b6f"
+    }
+  },
+  "internet_gateway_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "igw-009bb4d1293a24ea5"
+  },
+  "nat_gateway_ids": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "nat-0bf565bb69fcfc2b2",
+      "nat-0c52d5347daa5d8dc"
+    ]
+  },
+  "nat_gateway_public_ips": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "34.197.165.173",
+      "3.209.215.5"
+    ]
+  },
+  "private_route_table_ids": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "rtb-0a98fdbe1c7be53d2",
+      "rtb-0ab6a8aabd449ed89"
+    ]
+  },
+  "private_subnet_cidrs": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "10.0.10.0/24",
+      "10.0.20.0/24"
+    ]
+  },
+  "private_subnet_ids": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "subnet-037606e4ad66b0471",
+      "subnet-01d66f7508118d8eb"
+    ]
+  },
+  "public_route_table_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "rtb-005f6705330f29342"
+  },
+  "public_subnet_cidrs": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "10.0.1.0/24",
+      "10.0.2.0/24"
+    ]
+  },
+  "public_subnet_ids": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "subnet-09b5fb7864be47638",
+      "subnet-09d5b61aa14cc1f27"
+    ]
+  },
+  "s3_vpc_endpoint_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "vpce-0c62c77bb7e624d30"
+  },
+  "security_groups": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "alb": "string",
+        "app": "string",
+        "bastion": "string",
+        "database": "string",
+        "vpc_endpoints": "string"
+      }
+    ],
+    "value": {
+      "alb": "sg-0b31317938a2d2bf3",
+      "app": "sg-0006f9504e011ba46",
+      "bastion": "sg-007c7a4627c5df3b8",
+      "database": "sg-0f803d713d5579da1",
+      "vpc_endpoints": "sg-0bae04c297684bf7c"
+    }
+  },
+  "subnet_info": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "data": [
+          "object",
+          {
+            "azs": [
+              "tuple",
+              [
+                "string",
+                "string"
+              ]
+            ],
+            "cidrs": [
+              "tuple",
+              [
+                "string",
+                "string"
+              ]
+            ],
+            "ids": [
+              "tuple",
+              [
+                "string",
+                "string"
+              ]
+            ]
+          }
+        ],
+        "private": [
+          "object",
+          {
+            "azs": [
+              "tuple",
+              [
+                "string",
+                "string"
+              ]
+            ],
+            "cidrs": [
+              "tuple",
+              [
+                "string",
+                "string"
+              ]
+            ],
+            "ids": [
+              "tuple",
+              [
+                "string",
+                "string"
+              ]
+            ]
+          }
+        ],
+        "public": [
+          "object",
+          {
+            "azs": [
+              "tuple",
+              [
+                "string",
+                "string"
+              ]
+            ],
+            "cidrs": [
+              "tuple",
+              [
+                "string",
+                "string"
+              ]
+            ],
+            "ids": [
+              "tuple",
+              [
+                "string",
+                "string"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "value": {
+      "data": {
+        "azs": [
+          "us-east-1a",
+          "us-east-1b"
+        ],
+        "cidrs": [
+          "10.0.100.0/24",
+          "10.0.200.0/24"
+        ],
+        "ids": [
+          "subnet-0ca9b1d1ea593a9dc",
+          "subnet-05b8cd652ebc74ad5"
+        ]
+      },
+      "private": {
+        "azs": [
+          "us-east-1a",
+          "us-east-1b"
+        ],
+        "cidrs": [
+          "10.0.10.0/24",
+          "10.0.20.0/24"
+        ],
+        "ids": [
+          "subnet-037606e4ad66b0471",
+          "subnet-01d66f7508118d8eb"
+        ]
+      },
+      "public": {
+        "azs": [
+          "us-east-1a",
+          "us-east-1b"
+        ],
+        "cidrs": [
+          "10.0.1.0/24",
+          "10.0.2.0/24"
+        ],
+        "ids": [
+          "subnet-09b5fb7864be47638",
+          "subnet-09d5b61aa14cc1f27"
+        ]
+      }
+    }
+  },
+  "vpc_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:ec2:us-east-1:539247484955:vpc/vpc-0d74d5ec7294c0b6f"
+  },
+  "vpc_cidr": {
+    "sensitive": false,
+    "type": "string",
+    "value": "10.0.0.0/16"
+  },
+  "vpc_endpoints_security_group_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-0bae04c297684bf7c"
+  },
+  "vpc_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "vpc-0d74d5ec7294c0b6f"
+  }
+}
